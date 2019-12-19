@@ -1,0 +1,21 @@
+<p>
+  role works!
+</p>
+<div class="wrapper">
+  <div class="sidebar" data-color="red" data-image="">
+      <h1> hello sidebar </h1>
+      <!-- <app-sidebar></app-sidebar> -->
+<app-side-nav></app-side-nav>
+      <div class="sidebar-background" style="background-image: url(assets/img/sidebar-5.jpg)"></div>
+  </div>
+
+  <div class="main-panel">
+      <navbar-cmp></navbar-cmp>
+      <router-outlet></router-outlet>
+      <div *ngIf="isMap('maps')">
+          <footer-cmp></footer-cmp>
+      </div>
+  </div>
+
+</div>
+
